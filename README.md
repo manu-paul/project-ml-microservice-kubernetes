@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![manu-paul](https://circleci.com/gh/manu-paul/project-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/manu-paul/project-ml-microservice-kubernetes)
 
 ## Project Overview
 
