@@ -7,9 +7,20 @@ This project is to operationalize a Python based Machine Learning Microservice A
 
 * Python3 -m venv ~/.devops
 * make install
-* python3 app.py<br><
+* python3 app.py
 
-## What is the repository files?
+## Setup the Environment
+
+* Create a virtualenv and activate it
+* Run `make install` to install the necessary dependencies
+
+### Running `app.py`
+
+1. Standalone:  `python app.py`
+2. Run in Docker:  `./run_docker.sh`
+3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+## What are the repository files?
 
 * .circleci/config.yml -  script that build the project on cilcleci
 * model_data directory has python module that will be imported in the code
@@ -32,21 +43,17 @@ This project is to operationalize a Python based Machine Learning Microservice A
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-## Setup the Environment
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
-
-### Running `app.py`
-
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+* minikube installation<br>
+brew install minikube
+
+* Start a cluster using the docker driver:<br>
+minikube config set driver docker<br>
+minikube start --driver=docker<br>
+
+* Deploy and Application in Kubernetes<br>
+./run_kubernetes.s
 
