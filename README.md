@@ -28,7 +28,7 @@ source ~/.devops/bin/activate
 * run_docker.sh - script that create an image and run container
 * upload_docker.sh - script that push the docker image to dockerhub
 * run_kubernetes.sh - script that create kubernetes cluster and run the app on mapped port
-
+* output_txt_files/kubernetes_terminal.png - Shows the terminal output of kubernetes run
 
 ### Kubernetes Steps
 * minikube installation<br>
